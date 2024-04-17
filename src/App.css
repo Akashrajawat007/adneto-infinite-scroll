@@ -1,10 +1,30 @@
 .App{
-  margin: 60px 80px;
+  margin: 30px 70px;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  font-family: "Sanchez", serif;
+  color: white;
 }
 
 h1{
   text-align: center;
   text-transform: uppercase;
-  font-family: "Sanchez", serif;
-  color: white;
+  font-size: 36px;
+}
+
+.container {
+  max-width: 768px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote{
+  position: relative;
+  font-size: 20px;
+  line-height: 1.7em;
+  word-break: break-word;
 }
