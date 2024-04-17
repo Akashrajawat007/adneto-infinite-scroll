@@ -13,10 +13,22 @@ h1{
   max-width: 768px;
   margin: 2em auto;
   display: flex;
-  /* gap: 2rem; */
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  gap: 1rem;
+}
+
+.quote-container {
+  position: relative;
+}
+
+.quote-symbol {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  font-size: 8rem;
+  color: #fff; 
+  margin-left: 5px; 
 }
 
 .quote{
@@ -40,6 +52,9 @@ footer{
   width: 80px;
   height: 80px;
   opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .loader.show {

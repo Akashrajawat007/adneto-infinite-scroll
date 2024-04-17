@@ -3,12 +3,11 @@ import React from "react";
 function Quote({ data }) {
   return (
     <>
-      <p>
-        <div className="quote">
-          {data.id}) {data.quote}
-        </div>
-        <footer>-{data.author}</footer>
-      </p>
+      <div className="quote-container">
+        <div className="quote-symbol">&rdquo;</div>
+          <p className="quote">{data.id}) {data.quote} </p>
+          <footer>-{data.author}</footer>
+      </div>
     </>
   );
 }

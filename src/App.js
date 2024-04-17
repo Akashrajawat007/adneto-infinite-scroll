@@ -55,13 +55,13 @@ function App() {
             <Quote data={item}></Quote>
           </div>
         ))}
-        {loading && (
+        {/* {loading && ( */}
           <div className="loader show">
             <div></div>
             <div></div>
             <div></div>
           </div>
-        )}
+        {/* )} */}
       </div>
     </div>
   );
