@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./App.css";
 import Quote from "./components/Quote";
+import Loader from "./components/Loader";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -55,13 +56,7 @@ function App() {
             <Quote data={item}></Quote>
           </div>
         ))}
-        {/* {loading && ( */}
-          <div className="loader show">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        {/* )} */}
+        {loading && <Loader/>}
       </div>
     </div>
   );
