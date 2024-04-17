@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
-function Quote({data}) {
+function Quote({ data }) {
   return (
-    <div className='quote'>{data.id}) {data.quote}</div>
-  )
+    <>
+      <p>
+        <div className="quote">
+          {data.id}) {data.quote}
+        </div>
+        <footer>-{data.author}</footer>
+      </p>
+    </>
+  );
 }
 
-export default Quote
+export default Quote;

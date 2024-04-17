@@ -14,10 +14,8 @@ function App() {
         `https://api.javascripttutorial.net/v1/quotes/?page=${page}&limit=10`
       );
       const data = await response.json();
-      console.log("Data: ", data.data);
       setItems((prevItems) => [...prevItems, ...data.data]);
       setPage((prevPage) => prevPage + 1);
-      console.log("Full Data: ", items);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
@@ -57,7 +55,13 @@ function App() {
             <Quote data={item}></Quote>
           </div>
         ))}
-        {loading && <div className="loading">Loading...</div>}
+        {loading && (
+          <div className="loader show">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        )}
       </div>
     </div>
   );
